@@ -1,0 +1,47 @@
+<div class="row">
+            <div class="col-4">
+                <p>Mercredi après-midi</p>
+            </div>
+            <div class="col-4">
+                <p>Vieux-Vy-sur-Couesnon (35)</p>
+            </div>
+            <div class="col-4">
+                <p>Voir plus ></p>
+            </div>
+            <div class="col-4">
+                <p>Mercredi après-midi</p>
+            </div>
+            <div class="col-4">
+                <p>Vieux-Vy-sur-Couesnon (35)</p>
+            </div>
+            <div class="col-4">
+                <p>Voir plus ></p>
+            </div>
+            <div class="col-4">
+                <p>Mercredi après-midi</p>
+            </div>
+            <div class="col-4">
+                <p>Vieux-Vy-sur-Couesnon (35)</p>
+            </div>
+            <div class="col-4">
+                <p>Voir plus ></p>
+            </div>
+            <div class="col-4">
+                <p>Mercredi après-midi</p>
+            </div>
+            <div class="col-4">
+                <p>Vieux-Vy-sur-Couesnon (35)</p>
+            </div>
+            <div class="col-4">
+                <p>Voir plus ></p>
+            </div>
+            <div class="col-4">
+                <p>Mercredi après-midi</p>
+            </div>
+            <div class="col-4">
+                <p>Vieux-Vy-sur-Couesnon (35)</p>
+            </div>
+            <div class="col-4">
+                <p>Voir plus ></p>
+            </div>
+        </div>

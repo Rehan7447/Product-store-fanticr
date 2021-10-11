@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Livraison</title>
+
+	<link rel="stylesheet" href="../styles/livraison-styles.css" />
+
+	<script src="../js/livraison.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery-3.5.1.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+	<!-- font awsome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../jquery-ui.css">
+</head>
+
+<body>
+	<div class="logo-container">
+		<img src="../img/Emeraude-Logo.png" alt="Logo" class="logo" />
+	</div>
+
+	<div class="progress-container">
+		<div class="progress column-container" style="height: 4rem; background-color: transparent">
+			<div class="circle-completed">
+				<img src="../img/check 2.png" alt="" />
+			</div>
+			<div class="p-completed">Panier</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="progress column-container" style="height: 4rem; background-color: transparent">
+			<div class="circle-uncompleted"></div>
+			<div class="p-completed">Livraison</div>
+		</div>
+
+		<div class="line" style="background-color: #c4c4c4"></div>
+
+		<div class="progress column-container" style="height: 4rem; background-color: transparent">
+			<div class="circle-border"></div>
+			<div class="p-uncompleted">Paiement</div>
+		</div>
+	</div>
+
+	<div class="main-heading-container">
+		<span class="main-heading"> Livraison </span>
+	</div>
+
+	<div class="row grey-area">
+		<div class="col-md-6 col-12 grey-box">
+			<div class="row" style="height: 100%">
+				<div class="col-2 flex">
+					<div class="ecclipse active" id="select1" onclick="active1()"></div>
+				</div>
+				<div class="col-md-4 col-6 flex">
+					<span class="para">Livraison a domicile A 20km a la ronde Beaussais-sur-mer.</span>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-3 flex">
+					<h1>+3€</h1>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 grey-box">
+			<div class="row" style="height: 100%">
+				<div class="col-2 flex">
+					<div class="ecclipse" id="select2" onclick="active2()"></div>
+				</div>
+				<div class="col-8 flex">
+					<span class="para">
+						<span style="font-weight: 800">Récuperer</span> son colis au
+						prochain marché, details disponible la page
+						<span style="color: #1c71f9">marché</span>.</span>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row lower-container-1 hide" id="lower-container-2">
+		<div class="col-md-12 lightGrey-box">
+			<div class="row" style="height: 85%">
+				<div class="col-md-1 col-2 column-flex">
+					<div class="ecclipse1 custom-margin active" id="LowerSelect1" onclick="active3()"></div>
+					<div class="ecclipse1" id="LowerSelect2" onclick="active4()"></div>
+					<div class="ecclipse1" id="LowerSelect3" onclick="active5()"></div>
+					<div class="ecclipse1" id="LowerSelect4" onclick="active6()"></div>
+					<div class="ecclipse1" id="LowerSelect5" onclick="active7()"></div>
+				</div>
+
+				<div class="col-md-6 col-10">
+					<div class="row table">
+						<div class="col-6 first">
+							<p>Mercredi après-midi</p>
+						</div>
+						<div class="col-6">
+							<p class="m-t-s-p">Vieux-Vy-sur-Couesnon (35)</p>
+						</div>
+						<div class="col-6 first">
+							<p>Jeudi matin</p>
+						</div>
+						<div class="col-6">
+							<p class="m-t-s-p">La Vicomté-sur-Rance (22)</p>
+						</div>
+						<div class="col-6 first">
+							<p class="m-t-s-p">Vendredi matin</p>
+						</div>
+						<div class="col-6">
+							<p class="m-t-s-p">Caulnes (22)</p>
+						</div>
+						<div class="col-6 first">
+							<p class="m-t-s-p">Samedi matin</p>
+						</div>
+						<div class="col-6">
+							<p class="m-t-s-p">Sens de Bretagne (35)</p>
+						</div>
+						<div class="col-6 first">
+							<p class="m-t-s-p">Dimanche matin</p>
+						</div>
+						<div class="col-6">
+							<p class="m-t-s-p">Pleurtuit (35)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1"></div>
+				<div class="col-md-4 right-side">
+					<!-- <select
+							class="form-select selector"
+							aria-label="Default select example"
+						>
+							<option selected>Se rendre au marché</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select> -->
+						<input type="text" id="date" class="form-select selector" placeholder="Select Date" >
+					<button type="button" class="btn btn-primary continuer"
+						onClick="location.href='../pages/panier.html'">
+						Continuer
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row grey-area" id="lower-container-1">
+		<div class="col-md-6 col-12 map-box">
+			<div style="border-radius: 15px">
+				<iframe class="map custom-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695017.0575461374!2d0.20500266249999363!3d48.7274082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60ad34b93f161%3A0x9c8e1ca330281ef4!2sEmeraude!5e0!3m2!1sen!2s!4v1630410242987!5m2!1sen!2s"
+					width="100%" height="500px" style="border: 0; border-radius: 15px" allowfullscreen=""
+					loading="lazy"></iframe>
+			</div>
+		</div>
+
+		<div class="col-md-6 form-box">
+			<form>
+				<div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Numéro et Nom de rue</label>
+					<input type="text" class="form-control form-name" id="exampleFormControlInput1"
+						name="Numéro et Nom de rue" />
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Complément d’adresse</label>
+					<input type="email" class="form-control form-email" id="exampleFormControlInput1"
+						name="Complément d’adresse" />
+				</div>
+				<div class="row g-2">
+					<div class="mb-3 col-auto">
+						<label for="exampleFormControlInput1" class="form-label">Code Postal</label>
+						<input type="text" class="form-control form-postal" id="exampleFormControlInput1"
+							name="Code Postal" />
+					</div>
+					<div class="mb-3 col-auto">
+						<label for="exampleFormControlInput1" class="form-label">Ville</label>
+						<input type="text" class="form-control form-Ville" id="exampleFormControlInput1" name="Ville" />
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="mb-3 col-auto">
+						<label for="exampleFormControlInput1" class="form-label">Numéro de telephone</label>
+						<input type="tel" class="form-control form-tel" id="exampleFormControlInput1"
+							name="Numéro de telephone" />
+					</div>
+					<div class="mb-3 col-auto">
+						<button type="submit" class="btn btn-primary mb-3 form-submit">
+							Continuer
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#date').datepicker();
+	})
+	</script>
+</body>
+
+</html>

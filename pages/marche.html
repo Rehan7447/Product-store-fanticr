@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeraude Colis</title>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="../styles/styles2.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="nav ">
+        <div class="login-div">
+            <a href="#"><img src="../img/logo.png" alt="Main Logo" id="logo" class="brand"></a>
+
+        </div>
+        <div class="hide-nav nav-content">
+            <ul>
+                <li><a href="./acceuil.html">acceuil</a></li>
+                <li><a href="./colis.html">colis</a></li>
+                <li><a href="./histoire.html">histoire</a></li>
+                <li><a href="#" class="current">marché</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+
+        </div>
+        <div class="hide-nav" id="mycart">
+            <div class="cart-container">
+                <img src="../img/shopping_bag.png" alt="Shopping Bag">
+            </div>
+
+            <span class="position-absolute  badge rounded-pill bg-danger" id="mybadge">
+                0
+
+            </span>
+        </div>
+
+        <img class="toggler-button" src="../img/bars-solid.svg" alt="" onclick="ShowNav(4)">
+    </nav>
+
+    <div class="container">
+        <h1 class="marche-heading">Les marchés locaux </h1>
+        <p class="marche-content">Entre tradition (marché ambulant) et modernité (e-commerce), Emeraude Colis se veut
+            être un acteur local et engagé. Emeraude Colis est présent sur 5 marchés tout au long de l’année.
+        </p>
+        <div class="table-container">
+            <div class="row">
+                <div class="col-md-10 col-12">
+                    <div class="row table">
+                        <div class="col-6 first">
+                            <p>Mercredi après-midi</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-t-s-p">Vieux-Vy-sur-Couesnon (35)</p>
+                        </div>
+                        <div class="col-6 first">
+                            <p>Jeudi matin</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-t-s-p">La Vicomté-sur-Rance (22)</p>
+                        </div>
+                        <div class="col-6 first">
+                            <p class="m-t-s-p">Vendredi matin</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-t-s-p">Caulnes (22)</p>
+                        </div>
+                        <div class="col-6 first">
+                            <p class="m-t-s-p">Samedi matin</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-t-s-p">Sens de Bretagne (35)</p>
+                        </div>
+                        <div class="col-6 first">
+                            <p class="m-t-s-p">Dimanche matin</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="m-t-s-p">Pleurtuit (35)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 voir-links">
+                    <div class="row">
+                        <div class="col-12 link">
+                            Voir plus <span>></span></p>
+                        </div>
+                        <div class="col-12 link">
+                            Voir plus <span>></span></p>
+                        </div>
+                        <div class="col-12 link">
+                            Voir plus <span>></span></p>
+                        </div>
+                        <div class="col-12 link">
+                            Voir plus <span>></span></p>
+                        </div>
+                        <div class="col-12 link">
+                            Voir plus <span>></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <footer class="d-flex flex-row">
+        <div class="footer-left">
+            <a href="#" class="logo"><img src="../img/logo.png" alt="Logo" class="footer-logo"></a>
+            <p>Emeraude Colis© All rights reserved</p>
+        </div>
+        <div class="footer-right">
+            <p class="social-head">Réseaux sociaux</p>
+            
+            <div class="social-div">
+                <div class="icon_div">
+                    <span><i class="fa fa-instagram"></i></span>
+                </div>
+                <div class="text_div">
+                    <a href="https://www.instagram.com/emeraudecolis"><span>@emeraudecolis</span></a>
+                </div>
+            </div>
+            <div class="social-div">
+                <div class="icon_div">
+                    <span><i class="fa fa-facebook-f"></i></span>
+                </div>
+                <div class="text_div">
+                    <a href="https://www.facebook.com/emeraudecolis"><span>@emeraudecolis</span></a>
+                </div>
+            </div>
+        </div>
+
+        <h6></h6>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="../js/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

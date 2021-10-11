@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Paiement</title>
+
+	<link rel="stylesheet" href="../styles/payment.css" />
+	<link rel="stylesheet" href="../styles/styles2.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous" />
+
+	<!-- font awsome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<div class="logo-container">
+		<a href="./draft.html"><img src="../img/Emeraude-Logo.png" alt="Logo" class="logo" /></a>
+	</div>
+
+	<div class="progress-container">
+		<div class="progress column-container" style="height: 70px; background-color: transparent">
+			<div class="circle-completed">
+				<img src="../img/check 2.png" alt="" />
+			</div>
+			<div class="p-completed">Panier</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="progress column-container" style="height: 70px; background-color: transparent">
+			<div class="circle-completed">
+				<img src="../img/check 2.png" alt="" />
+			</div>
+			<div class="p-completed">Livraison</div>
+		</div>
+
+		<div class="line"></div>
+
+		<div class="progress column-container" style="height: 70px; background-color: transparent">
+			<div class="circle-uncompleted"></div>
+			<div class="p-completed">Paiement</div>
+		</div>
+	</div>
+
+	<div class="paiement-container">
+		<span class="paiement"> Paiement </span>
+	</div>
+
+	<div class="container-grid row">
+		<div class="container container-two col-md-4 col-sm-12" id="sidebar">
+			<div class="info-thirdP">
+				<div class="info-container-two">
+					<div class="line-info"></div>
+					<h2 class="heading1">Paiement rapide</h2>
+				</div>
+			</div>
+			<div class="thirdPboxes">
+				<div class="box" id="box1" onclick="active()">
+					<img src="../img/Paypal-Logo.png" alt="" class="logo-paypal" />
+				</div>
+				<div class="box" id="box2" onclick="active2()">
+					<img src="../img/Lydia-Logo.png" alt="" class="logo-lydia" />
+				</div>
+			</div>
+
+			<div class="total-billings">
+				<div class="info-container-two">
+					<div class="thirdP">
+						<div class="line-info"></div>
+						<h2 class="heading1">Resultat</h2>
+					</div>
+				</div>
+
+				<div class="mycontent">
+					<div class="row small-product-container ">
+						<div class="col-lg-3 col-md-3">
+							<img src="../img/Product Image 2 2.png" alt="" id="change-img" />
+						</div>
+						<div class="col-lg-9 col-md-9">
+							<div class="col-lg-9 " id="changedata-pay">Colis Bosco 5 Bières  BIO(3) <br><span
+									class="dash ac-dash small-dash"></span>
+								19,95€</div>
+						</div>
+					</div>
+					<div class="row small-product-container">
+						<div class="col-lg-3 col-md-3">
+							<img src="../img/Product Image 2 2.png" alt="" id="change-img" />
+						</div>
+						<div class="col-lg-9 col-md-9">
+							<div class="col-lg-9 " id="changedata-pay">Colis Bosco 5 Bières  BIO(3) <br><span
+									class="dash ac-dash small-dash"></span>
+								19,95€</div>
+						</div>
+					</div>
+					<div class="row small-product-container">
+						<div class="col-lg-3 col-md-3">
+							<img src="../img/Product Image 2 2.png" alt="" id="change-img" />
+						</div>
+						<div class="col-lg-9 col-md-9" id="changedata-pay">Colis Bosco 5 Bières  BIO(3) <br><span
+								class="dash ac-dash small-dash"></span>
+							19,95€</div>
+					</div>
+					<div class="row small-product-container">
+						<div class="col-lg-3 col-md-3">
+							<img src="../img/Product Image 2 2.png" alt="" id="change-img" />
+						</div>
+						<div class="col-lg-9 col-md-9" id="changedata-pay">Colis Bosco 5 Bières  BIO(3) <br> <span
+								class="dash ac-dash small-dash"></span>
+							19,95€</div>
+					</div>
+
+					<!-- <div class="row product">
+							<div class="col-md-1 "></div>
+							<div class="col-md-8 small-product">
+								<div class=" row d-flex align-items-center">
+									<div class="col-md-3 product-img"> <img src="../img/Product Image 2 2.png" alt="" id="change-img">
+									</div>
+									<div class="col-md-9" id="changedata">Colis Bosco 5 Bières BIO(3)<br><span class="dash ac-dash"></span>
+										19,95€</div>
+								</div>
+							</div>
+						</div> -->
+				</div>
+
+				<div class="totale">
+					<div class="totale-txt">
+						<h5>Totale</h5>
+						<h3>80€</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container container-one col-md-7 col-sm-12">
+			<div class="info-cb row">
+				<div class="cb col-md-6 col-12">
+					<div class="line-info"></div>
+					<h2 class="heading1">Info carte bancaire</h2>
+				</div>
+				<div class="paiement-secure col-md-6">
+					<img src="../img/lock 1.png" alt="lock" class="lock" />
+					<span style="
+								font-size: 1.1em;
+								font-weight: bold;
+								color: var(--input-color);
+							">
+						Paiement sécurisé
+					</span>
+				</div>
+			</div>
+
+			<div class="inputs" style="margin: 20px">
+				<span class="heading2 numero-padding">Numero de carte</span>
+
+				<br />
+
+				<div class="InputBox row">
+					<div class="col-md-7 col-12 add-margin">
+						<input type="text" class="card-number-input" />
+					</div>
+					<div class="col-md-5 col-12 custom-margin" style="display: flex; justify-content: space-between">
+						<div class="PaymentLogo" id="logo1" onclick="active3()">
+							<img src="../img/Visa-Logo.png" alt="" style="width: 65%" />
+						</div>
+						<div class="PaymentLogo" id="logo2" onclick="active4()">
+							<img src="../img/MasterCard-Logo.png" alt="" style="width: 85%" />
+						</div>
+						<div class="PaymentLogo" id="logo3" onclick="active5()">
+							<img src="../img/AmericanExpress-Logo.png" alt="" style="width: 100%" />
+						</div>
+					</div>
+				</div>
+
+				<div class="row" style="margin-top: 22px">
+					<div class="col-md-6 col-12" style="padding-right: 0">
+						<div class="row">
+							<div class="col-8" style="padding-right: 0">
+								<span class="heading2">Date dexpiration</span>
+								<div style="flex-direction: row">
+									<select name="months" id="months" class="custom-input">
+										<option value="Mois">Mois</option>
+										<option value="January">Jan</option>
+										<option value="February">Feb</option>
+										<option value="March">Mar</option>
+										<option value="April">Apr</option>
+										<option value="May">May</option>
+										<option value="June">Jun</option>
+										<option value="July">Jul</option>
+										<option value="August">Aug</option>
+										<option value="September">Sep</option>
+										<option value="October">Oct</option>
+										<option value="November">Nov</option>
+										<option value="December">Dec</option>
+									</select>
+									<select id="date-dropdown" class="custom-input"></select>
+								</div>
+							</div>
+							<div class="col-4" style="padding-right: 0; padding-left: 0">
+								<span class="heading2 no-padding" style="padding-left: 20px">CVC</span><br />
+								<input type="text" class="CVCbutton" style="width: 80%" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 no-display">
+						<span class="heading2 custom-display" style="padding-left: 20px">E-mail</span>
+						<input type="email" class="custom-input custom-display" style="width: 100%" />
+					</div>
+				</div>
+
+				<div class="row" style="margin-top: 22px">
+					<div class="col-md-8 col-12" style="padding-right: 0">
+						<div class="row">
+							<div class="col-6" style="padding-right: 0">
+								<span class="heading2-custom-1">Prenom</span>
+								<input type="text" class="custom-input-1" />
+							</div>
+							<div class="col-6">
+								<span class="heading2-custom-2">Nom</span>
+								<input type="text" class="custom-input-2" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-area">
+				<div class="content">
+					<div class="bg" style="height: 8em"></div>
+				</div>
+			</div>
+
+			<div class="small-email">
+				<div class="email-heading">
+					<span class="heading2">E-mail</span>
+				</div>
+				<div class="email-input">
+					<input type="email" class="custom-email-input" />
+				</div>
+			</div>
+
+			<div class="small-submit-area">
+				<div class="custom-totale">
+					<div class="totale-txt">
+						<h5>Totale</h5>
+						<h3>80€</h3>
+					</div>
+				</div>
+				<input type="submit" value="Terminer" class="btn btn-primary custom-submit-button" />
+			</div>
+
+			<div class="submit-button">
+				<input type="submit" value="Terminer" class="btn btn-primary" style="
+							width: 15em;
+							border-radius: 0.5em;
+							font-size: 1.1em;
+							font-weight: 600;
+						" />
+			</div>
+		</div>
+	</div>
+	<footer class="d-flex flex-row">
+		<div class="footer-left">
+			<a href="#" class="logo"><img src="../img/logo.png" alt="Logo" class="footer-logo"></a>
+			<p>Emeraude Colis© All rights reserved</p>
+		</div>
+		<div class="footer-right">
+			<p class="social-head">Réseaux sociaux</p>
+
+
+			<div class="social-div">
+				<div class="icon_div">
+					<span><i class="fa fa-instagram"></i></span>
+				</div>
+				<div class="text_div">
+					<a href="https://www.instagram.com/emeraudecolis"><span>@emeraudecolis</span></a>
+				</div>
+			</div>
+			<div class="social-div">
+				<div class="icon_div">
+					<span><i class="fa fa-facebook-f"></i></span>
+				</div>
+				<div class="text_div">
+					<a href="https://www.facebook.com/emeraudecolis"><span>@emeraudecolis</span></a>
+				</div>
+			</div>
+		</div>
+
+		<h6></h6>
+	</footer>
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="../js/payment.js"></script>
+
+
+</html>
